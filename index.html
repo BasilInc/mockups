@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample</title>
+    <link rel='stylesheet' href='common/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='common/css/bootstrap-responsive.min.css' />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="common/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+  	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Sample Mockup</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right">
+            <ul class="nav">
+              <li ><a href="#">Logout</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+    	<section class="example_contain">
+        <div class="example_element" data-draft-repeat="6">
+          <img data-draft-image="300/300" />
+          <div class="example_description">
+            <p data-draft-text="1/s"></p>
+            <i data-draft-date="M-r/y"></i>
+            <button class="btn btn-warning btn-mini btn-block" data-draft-text="1/w"></button>
+          </div>
+        </div>
+      </section>
+    </div> <!-- /container -->
+	  
+
+    <script>
+    $(function(){
+      $(window).roughDraft({
+        'author' : 'baconipsum.com',
+        'illustrator' : 'placehold.it',
+        'thesaurus': '/roughdraft.thesaurus.json'
+      });
+    });
+    </script>
+  </body>
+</html>
