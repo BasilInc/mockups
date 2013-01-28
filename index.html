@@ -35,16 +35,12 @@
     </div>
   
     <div class="container">
-    	<section class="example_contain">
-        <div class="example_element" data-draft-repeat="6">
+      <div class="row" data-draft-repeat="2">
+        <div class="span4" data-draft-repeat="3">
           <img data-draft-image="300/300" />
-          <div class="example_description">
-            <p data-draft-text="1/s"></p>
-            <i data-draft-date="M-r/y"></i>
-            <button class="btn btn-warning btn-mini btn-block" data-draft-text="1/w"></button>
-          </div>
         </div>
-      </section>
+      </div>
+    	
     </div> <!-- /container -->
 	  
 
@@ -53,7 +49,7 @@
       $(window).roughDraft({
         'author' : 'baconipsum.com',
         'illustrator' : 'placehold.it',
-        'thesaurus': '/roughdraft.thesaurus.json'
+        'thesaurus': 'common/js/roughdraft.thesaurus.json'
       });
     });
     </script>
