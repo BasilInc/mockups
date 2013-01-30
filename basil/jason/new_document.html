@@ -40,6 +40,11 @@
       <div class="row">
         <div class="span12" style="border: 2px solid rgba(0,0,0,0.5); border-radius:5px; height:600px; position:relative;">
           <i class="icon-fullscreen" style="position:absolute;top:5px;right:5px;"></i>
+
+          <div style="position:absolute; top:25px; left:25px;">
+            <input id="new_text_element" type="text" style="border:none; box-shadow:none !important;"/>
+          </div>
+
         </div>
       </div>
       <div class="row">
@@ -61,6 +66,7 @@
 
     <script>
     $(function(){
+      $('#new_text_element').focus();
       $(window).roughDraft({
         'author' : 'baconipsum.com',
         'illustrator' : 'placehold.it',
