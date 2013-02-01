@@ -33,7 +33,11 @@ body {
   margin-top: 20px;
 }
 
-/* Project Thumbnails */
+/* Project Dashboard */
+.project_dashboard .row {
+  margin-bottom: 20px;
+}
+
 .project_thumbnail .thumbnail {
   position: fixed;
 }
