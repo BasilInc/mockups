@@ -8,21 +8,24 @@
 }
 
 .flex-vertical {
-  flex-direction: column;
   box-orient: vertical;
   -webkit-box-orient: vertical;
+  flex-direction: column;
+  -webkit-flex-direction: column;
 }
 
 .flex-horizontal {
-  flex-direction: row;
   box-orient: horizontal;
   -webkit-box-orient: horizontal;
+  flex-direction: row;
+  -webkit-flex-direction: row;
 }
 
 .flex1 {
-  flex: 1;
   box-flex: 1;
   -webkit-box-flex: 1;
+  flex: 1;
+  -webkit-flex: 1;
 }
 
 body {
