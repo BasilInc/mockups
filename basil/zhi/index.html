@@ -2,14 +2,47 @@
 <html>
   <head>
     <title>Sample</title>
+    <link rel='stylesheet' href="../../common/css/reset.css"/>
     <link rel='stylesheet' href='../../common/css/bootstrap.min.css' />
-    <link rel='stylesheet' href='../../common/css/bootstrap-responsive.min.css' />
+    <link rel="stylesheet" href="./css/zhi.css" type="text/css" media="screen" charset="utf-8"/>
+    <!-- <link rel='stylesheet' href='../../common/css/bootstrap-responsive.min.css' /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../../common/js/bootstrap.min.js"></script>
     <script src="../../common/js/jquery.roughdraft.0.1.0.min.js"></script>
 
   </head>
   <body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <span class="brand">Project Dashboard</span>
+          <ul class="nav pull-right">
+            <li><a href="#"><i class="icon-white icon-plus-sign"></i> New Project</a></li>
+            <li><a href="#"><i class="icon-white icon-cog"></i> Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="container">
+      <div class="row">
+        <div class="span3" data-draft-repeat="4">
+          <div class="project_thumbnail">
+            <div class="thumbnail">
+              <a href="#"><img data-draft-image="210/210"/></a>
+            </div>
+            <div class="title flex-container flex-vertical">
+              <div class="flex1"></div>
+              <p>This is the project title</p>
+              <div class="flex1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
     
     <script>
     $(function(){

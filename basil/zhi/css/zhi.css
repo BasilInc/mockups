@@ -1,0 +1,63 @@
+/* Universal Styles */
+
+.flex-container {
+  display: box;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flex-vertical {
+  flex-direction: column;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
+
+.flex-horizontal {
+  flex-direction: row;
+  box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+}
+
+.flex1 {
+  flex: 1;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+}
+
+body {
+  padding-top: 40px;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+/* Project Thumbnails */
+.project_thumbnail .thumbnail {
+  position: fixed;
+}
+
+.project_thumbnail thumbnail img {
+  
+}
+
+.project_thumbnail img:hover {
+  opacity: 0.2;
+}
+
+.project_thumbnail .title {
+  width: 210px;
+  height: 210px;
+  padding: 5px;
+  z-index: -1;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.project_thumbnail p {
+  margin: 0;
+}
