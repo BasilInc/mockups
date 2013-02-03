@@ -1,5 +1,4 @@
 Mockups
-=======
 
 Within the common directory there are a few resources that can be used.
 
