@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="../../common/js/bootstrap.min.js"></script>
     <script src="../../common/js/jquery.roughdraft.0.1.0.min.js"></script>
+    <script src="../../common/js/jquery.jeditable.min.js"></script>
 
   </head>
   <body class="new_project">
@@ -17,10 +18,10 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <span class="brand">Unnamed Project</span>
+          <span class="brand edit">Unnamed Project</span>
           <ul class="nav pull-right">
             <li><a href="#"><i class="icon-white icon-comment"></i> Discuss</a></li>
-            <li><a href="#"><i class="icon-white icon-pencil"></i> Wireframe</a></li>
+            <li><a href="#"><i class="icon-white icon-pencil"></i> Visualize</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <i class="icon-white icon-th-list"></i> Menu
@@ -43,5 +44,29 @@
     </div>
     
     <script type="text/javascript" charset="utf-8" src="../../common/js/roughdraft_import.js"></script>
+    <script type="text/javascript">
+      /*
+        Allows the simple in-place editing of an element, without saving anything
+        
+        Bugs
+        ----
+        - Currently, it's possible to click to span again while it's in edit mode. Need to remove event handler then re-apply after blur().
+       */
+      $(document).ready(function() {
+        $(".edit").click(function() {
+          var projectTitle = this;
+          var id = "projectName";
+          $(projectTitle).removeClass("edit");
+          var projectName = $(projectTitle).html();
+          $(projectTitle).html("<form><input id='" + id + "' value='" + projectName + "'/></form>");
+          $("#" + id).focus();
+          $("#" + id).blur(function() {
+            var newProjectName = $("#" + id).val();
+            $(projectTitle).html(newProjectName);
+            $(projectTitle).addClass("edit");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
