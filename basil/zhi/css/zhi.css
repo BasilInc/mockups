@@ -1,4 +1,4 @@
-/* Universal Styles */
+/**************** Universal Styles ****************/
 
 .flex-container {
   display: box;
@@ -36,7 +36,7 @@ body {
   margin-top: 20px;
 }
 
-/* Project Dashboard */
+/**************** Project Dashboard ****************/
 .project_dashboard .row {
   margin-bottom: 20px;
 }
@@ -67,4 +67,48 @@ body {
 
 .project_thumbnail p {
   margin: 0;
+}
+
+/**************** New Project ****************/
+.edit form {
+  margin: 0;
+}
+
+.edit form input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+/**************** Project Discussion Pane ****************/
+.message.well {
+  margin-bottom: 5px;
+}
+
+.message_author_details {
+  margin-bottom: 5px;
+}
+
+.author_info {
+  width: 80%;
+  margin-right: 20%;
+}
+
+.message_date {
+  text-align: right;
+  float: right;
+  width: 20%;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.message_header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
 }
