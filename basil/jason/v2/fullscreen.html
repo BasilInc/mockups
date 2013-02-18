@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basil</title>
+    <link rel='stylesheet' href='http://cirruscpq.github.com/mockups/common/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='http://cirruscpq.github.com/mockups/common/css/bootstrap-responsive.min.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cirruscpq.github.com/mockups/common/js/bootstrap.min.js"></script>
+    <script src="http://cirruscpq.github.com/mockups/common/js/jquery.roughdraft.0.1.0.min.js"></script>
+
+  </head>
+  <body>
+    <a href="document3.html"><i class="icon-resize-small" style="position:absolute;top:5px;right:5px;"></i></a>
+    <div style="position:absolute; top:55px; left:318px; width:15px; height:15px; border:1px solid #999; border-radius:5px; z-index:2; background:rgba(200,210,255,0.8);"></div>
+    <div style="position:absolute; top:25px; left:25px;">
+      <h4 style="text-decoration:underline;">Front</h4>
+      <img data-draft-image="300/175"/>
+    </div>
+
+    <div style="position:absolute; bottom:10px; left:10px;">
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <a class="btn" href="#"><i class="icon-font"></i></a>
+          <a class="btn" href="#"><i class="icon-picture"></i></a>
+          <a class="btn" href="#"><i class="icon-comment"></i></a>
+          <a class="btn" href="#"><i class="icon-list"></i></a>
+          <a class="btn" href="#"><i class="icon-cog"></i></a>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(function(){
+      $(window).roughDraft({
+        'author' : 'baconipsum.com',
+        'illustrator' : 'placehold.it',
+        'thesaurus': '../../../common/js/roughdraft.thesaurus.json'
+      });
+    });
+    </script>
+  </body>
+</html>

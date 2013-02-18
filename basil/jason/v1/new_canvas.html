@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basil</title>
+    <link rel='stylesheet' href='http://cirruscpq.github.com/mockups/common/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='http://cirruscpq.github.com/mockups/common/css/bootstrap-responsive.min.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://cirruscpq.github.com/mockups/common/js/bootstrap.min.js"></script>
+    <script src="http://cirruscpq.github.com/mockups/common/js/jquery.roughdraft.0.1.0.min.js"></script>
+
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">Basil</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- <li class="active"><a href="#">Home</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right">
+            <ul class="nav">
+              <li ><a href="#">Logout</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" style="margin-top:55px;">
+      <h6 style="margin:0; padding:0;">New Canvas</h6>
+      <div class="row"> 
+          <a class="left carousel-control" style="font-size:120px; background:transparent; color:rgba(0,0,0,0.5);" href="document3.html">&#8249;</a>
+        <div class="span12" style="border: 2px solid rgba(0,0,0,0.5); border-radius:5px; height:600px; position:relative;">
+          <i class="icon-fullscreen" style="position:absolute;top:5px;right:5px;"></i>
+
+
+          <div style="position:absolute; top:25px; left:25px;">
+            <input id="new_text_element" type="text" style="border:none; box-shadow:none !important;"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <a class="btn" href="#"><i class="icon-font"></i></a>
+              <a class="btn" href="#"><i class="icon-picture"></i></a>
+              <a class="btn" href="#"><i class="icon-comment"></i></a>
+              <a class="btn" href="#"><i class="icon-list"></i></a>
+              <a class="btn" href="#"><i class="icon-cog"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-bottom:30px;margin-top:15px;">
+        <div class="offset1 span10">
+          <h4>Discussion</h4>
+          <ul>
+            <li data-draft-repeat="5" data-draft-text="3/s" style="list-style:none; border-bottom:1px solid rgba(0,0,0,0.3); padding:10px; padding-top:20px;"></li>
+          </ul>
+          <textarea style="height:50px;width:600px;margin-top:20px; margin-left:20px;" placeholder="Discuss..."></textarea>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script>
+    $(function(){
+      $('#new_text_element').focus();
+      $(window).roughDraft({
+        'author' : 'baconipsum.com',
+        'illustrator' : 'placehold.it',
+        'thesaurus': '../../../common/js/roughdraft.thesaurus.json'
+      });
+    });
+    </script>
+  </body>
+</html>
